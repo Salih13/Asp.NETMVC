@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Blog_Son.Models.Makale>
+
+@{
+    Layout = null;
+}
+
+<div class="categories widget">
+    <h3>@Resources.HomeLan.SonMakaleler</h3>
+    <ul>
+        @{
+            Blog_Son.Models.Makale makale = new Blog_Son.Models.Makale();
+        }
+        @foreach (var son in ViewBag.Fresh)
+        {
+            <li>
+                <a href="#">@son.Baslik</a><br>
+                <time>@son.YayimTarihi</time>
+            </li>
+        }
+    </ul>
+</div>

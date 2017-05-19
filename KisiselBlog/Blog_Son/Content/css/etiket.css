@@ -1,0 +1,28 @@
+.tag-cloud{
+  display: inline;
+  width: 100%;
+  text-align: left;
+}
+
+.tag-cloud a {
+  border: 1px solid #ccc;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 8px;
+  margin-right: 3px;
+  padding: 5px 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color:antiquewhite;
+  color:black;
+}
+
+.tag-cloud a:hover,
+.tag-cloud a:focus{
+  color: black;
+  background-color:aquamarine;      /*ayný*/
+  text-decoration: none;
+  outline: none;
+}
+

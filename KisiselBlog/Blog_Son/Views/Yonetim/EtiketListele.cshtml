@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Blog_Son.Models.Etiket>
+
+@{
+    ViewBag.Title = "EtiketListele";
+}
+
+<div class="row" style="text-align:center;">
+    <h2>@Resources.HomeLan.EtiketTum</h2>
+    <hr />
+</div>
+
+<p>
+    @Html.ActionLink(Resources.HomeLan.EtiketEkle, "Create")
+</p>
+<table class="table">
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adi)
+        </td>
+        <td>
+            <div style="float:right">
+                @Html.ActionLink(Resources.HomeLan.Duzenle,"EtiketListele", new { id = item.Id }) |
+                @Html.ActionLink(Resources.HomeLan.Sil, "EtiketSil", new { id = item.Id })
+            </div>
+        </td>
+    </tr>
+}
+
+</table>

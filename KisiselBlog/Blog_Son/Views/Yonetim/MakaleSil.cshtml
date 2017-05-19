@@ -1,0 +1,43 @@
+﻿@model Blog_Son.Models.Makale
+
+@{
+    ViewBag.Title = "MakaleSil";
+}
+
+<div class="row" style="text-align:center; ">
+    <h2>@Resources.HomeLan.MakaleSil</h2>
+    <hr />
+</div>
+
+<h3>@Resources.HomeLan.GercektenMaka</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Baslik) :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Baslik) 
+        </dd>  
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YayimTarihi) : 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YayimTarihi)
+        </dd>    
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color" style="text-align:center;">
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            @Html.ActionLink(Resources.HomeLan.ListeGeri, "TumMakaleler")
+        </div>
+    }
+    <br />
+</div>

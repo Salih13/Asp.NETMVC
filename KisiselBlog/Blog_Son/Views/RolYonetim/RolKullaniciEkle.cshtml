@@ -1,0 +1,29 @@
+﻿@model Blog_Son.Models.RolKullaniciEkleModel
+@{
+    ViewBag.Title = "RolKullaniciEkle";
+}
+
+<div class="row" style="text-align:center;">
+    <h2>@Resources.HomeLan.RolAta</h2>
+    <hr />
+</div>
+
+@using (Html.BeginForm("RolKullaniciEkle", "RolYonetim", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Kullanıcı Adı : ", htmlAttributes: new { @class = "control-label col-md-4" })
+        <div class="col-md-8">
+            @Html.TextBoxFor(model => model.KullaniciAdi, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <br />    <br />   
+    <div class="form-group">
+        @Html.Label("Rol Adı : ", htmlAttributes: new { @class = "control-label col-md-4" })
+        <div class="col-md-8">
+            @Html.TextBoxFor(model => model.RolAdi, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <br /><br />
+    <input type="submit" value="@Resources.HomeLan.Ekle" style="margin-left:100px;" />
+}
+<br /><br />

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Blog_Son.Models.Kategori>
+
+@{
+    ViewBag.Title = "Kategori";
+}
+
+<div class="row" style="text-align:center; ">
+    <h2>@Resources.HomeLan.Kategoriler</h2>
+    <hr />
+</div>
+<div class="text-danger">
+    @ViewBag.Hata
+</div>
+<p>
+    @Html.ActionLink(Resources.HomeLan.KatEkle, "KategoriEkle")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Adi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adi)
+        </td>
+        <td>
+            <div style="float:right">
+                @Html.ActionLink(Resources.HomeLan.Duzenle, "KategoriDuzenle", new { id = item.Id }) |
+                @Html.ActionLink(Resources.HomeLan.Sil, "KategoriSil", new { id = item.Id })
+            </div>          
+        </td>
+    </tr>
+}
+
+</table>

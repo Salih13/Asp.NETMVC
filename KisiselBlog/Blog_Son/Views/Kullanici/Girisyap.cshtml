@@ -1,0 +1,43 @@
+﻿@model Blog_Son.Models.Kullanici
+@{
+    ViewBag.Title = "Girisyap";
+}
+@using (Html.BeginForm("Girisyap", "Kullanici", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="row" style="text-align:center;">
+        <h2>Giriş Yap</h2>
+        <hr />
+    </div>
+    <div class="row" style="margin-left:100px;">
+        <div style="margin:auto">
+            <div>
+                @ViewBag.Mesaj
+            </div>
+              @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Nick, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-5">
+                    <input type="text" class="form-control" name="kullaniciAdi" id="name">
+                </div>
+            </div>
+            <br /><br />
+            <div class="form-group">
+             <span class="control-label col-md-3" style="font-weight: bold;">Parola</span>
+                <div class="col-md-5">
+                    <input type="password" class="form-control" name="Parola" id="name">
+                </div>
+            </div>
+            <br /><br />
+            <div style="margin-left:100px;">
+                <input type="submit" name="btnGiris" id="contact-submit" class="btn btn-default btn-send" value="Giriş Yap">
+            </div>
+            <br />
+            <div>
+                @Html.ActionLink("Hala sayfamıza üye değil misin? Hemen kaydol", "KayitOl", "Kullanici")
+            </div>
+            <br />
+            <br />
+        </div>
+    </div>
+}

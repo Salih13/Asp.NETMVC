@@ -1,0 +1,85 @@
+.portfolio-container {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+  .header-login{
+	display: inline;
+	float: left;
+	text-align: right;
+	width: 100%;
+}
+.header-bottom{
+	background-color: rgba(0, 0, 0, 0.02);
+	border-bottom: 1px solid #e4e4e4;
+	color: #949494;
+	font-size: 12px;
+	height: 40px;
+	display: inline;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	padding: 0 15px;
+	transition: all 0.3s ease 0s;  
+}
+.header-contact{
+	display: inline;
+	float: left;
+	width: 100%;
+}
+.header-contact ul{}
+.header-contact ul li {
+  border-left: 1px solid #e4e4e4;
+  display: inline-block;
+  float: left;
+  margin-right: 0px;
+  padding: 10px 12px;
+}
+.header-contact ul li:last-child{
+	border-right: 1px solid #e4e4e4;
+}
+
+.phone{
+	font-size: 14px;
+}
+
+.phone i{
+	margin-right: 5px; 
+}
+
+.mail{
+	font-size: 14px;
+}
+.mail i{
+	margin-right: 5px; 
+}
+
+.header-login{
+	display: inline;
+	float: left;
+	text-align: right;
+	width: 100%;
+}
+
+.login {
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  color: #949494;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.login:hover,
+.login:focus{	
+    background-color:aquamarine;    /*ayný*/
+	color:black;
+	text-decoration: none;
+	outline: none;
+}
+

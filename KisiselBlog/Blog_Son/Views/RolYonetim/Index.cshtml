@@ -1,0 +1,25 @@
+﻿@model List<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row" style="text-align:center;">
+    <h2>@Resources.HomeLan.Roller</h2>
+    <hr />
+</div>
+@Html.ActionLink(Resources.HomeLan.RolEkle, "RolEkle") | @Html.ActionLink(Resources.HomeLan.RolAta, "RolKullaniciEkle") 
+<br />
+<br />
+    @foreach (var item in Model)
+    {
+        
+         <tr>
+             <td>@item.Name : </td>
+             <td> @item.Users.Count</td>        
+         </tr>
+
+       <br />        <br />
+    }
+
+
+
+

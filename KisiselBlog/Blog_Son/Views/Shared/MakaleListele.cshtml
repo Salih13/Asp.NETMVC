@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Blog_Son.Models.Makale>
+@{
+    Layout = null;
+}
+
+@foreach (var makale in Model)
+{
+    <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+        <div class="blog-post-image">
+            <a href="/Makale/Detay/@makale.Id">
+                @*<img class="img-responsive" src="@makale.Resim.OrtaResimYol" alt="" />*@
+            </a>
+        </div>
+        <div class="blog-content">
+            <h2 class="blogpost-title">
+                <a href="/Makale/Detay/@makale.Id">@makale.Baslik</a>
+            </h2>
+            <div class="blog-meta">
+                <span>
+                    <a href="/Makale/TariheGoreListe? yil=@makale.YayimTarihi.Year&ay=@makale.YayimTarihi.Month">
+                        @makale.YayimTarihi.ToString("MMMM yyyy")
+                    </a>
+                </span>
+                <span><a href="/Kategori/Index/@makale.KategoriID"> @makale.Kategori.Adi </a></span>
+                @*<span><a href="/Yazar/Index/@makale.YazarID"> @makale.Kullanici.Adi @makale.Kullanici.Soyadi </a></span>*@
+                <span>@Resources.HomeLan.Yorumlar: <a href=""> @makale.Yorum.Count </a></span>
+                <span>@Resources.HomeLan.Begeniler: <a href=""> @makale.Begeni </a></span>
+                <span>@Resources.HomeLan.Goruntulenme: <a href=""> @makale.Goruntulenme </a></span>
+            </div>
+            <p>
+                @{
+                    if (makale.Icerik.Length > 300)
+                    {
+                    <p> @makale.Icerik.Substring(0, 300)... </p>
+                    }
+                    else
+                    {
+                        <p>@makale.Icerik</p>
+                    }
+                }
+                </p>
+                <a href="/Makale/Detay/@makale.Id" class="btn btn-dafault btn-details">@Resources.HomeLan.Devaminioku
+            </a>
+            </div>
+        </article>
+                    }

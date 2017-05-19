@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Blog_Son.Models.Makale>
+
+@{
+    Layout = null;
+}
+<div class="categories widget">
+    <h3>@Resources.HomeLan.PopularMakaleler</h3>
+    <ul>
+        @{
+            Blog_Son.Models.Makale makale = new Blog_Son.Models.Makale();
+        }
+        @foreach (var populer in ViewBag.Populer)
+        {
+            <li>
+                <a href="#">@populer.Baslik</a><br>
+                <time>@populer.YayimTarihi</time>
+            </li>
+        }
+    </ul>
+</div>

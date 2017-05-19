@@ -1,0 +1,70 @@
+﻿@model Blog_Son.Models.Kullanici
+@{
+    ViewBag.Title = "KayitOl";
+}
+
+
+@using (Html.BeginForm("KayitOl", "Kullanici", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row" style="text-align:center;">
+        <h2>Kayıt Ol</h2>
+     <hr />
+    </div>
+    <div class="row" style="margin-left:100px;">
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nick, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Nick, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.LabelFor(model => model.Adi, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Adi, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.LabelFor(model => model.Soyadi, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Soyadi, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.LabelFor(model => model.Mail, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Mail, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.Label("Parola", "Parola", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-5">
+                <input type="password" class="form-control" name="Parola" id="name">
+            </div>
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.Label("Parola", "Parola Tekrar", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-5">
+                <input type="password"  class="form-control" name="ParolaTekrar" id="subject">
+            </div>
+        </div>
+        <br /><br />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Kayıt ol" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+    <br /><br />
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+}

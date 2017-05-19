@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Aciklama" xml:space="preserve">
+    <value>I am studying in Computer Engineering department of Sakarya University.
+My goal is to make a contribution to the technology world if it is small. In my blog you will find articles from every subject. I'll try to share with you what I'm wondering about.</value>
+  </data>
+  <data name="Adiniz" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+  <data name="Arama" xml:space="preserve">
+    <value>What do you want to search?</value>
+  </data>
+  <data name="Arsiv" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="Baslik" xml:space="preserve">
+    <value>Hood</value>
+  </data>
+  <data name="Begeniler" xml:space="preserve">
+    <value>Likes</value>
+  </data>
+  <data name="CikisYap" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="Computer" xml:space="preserve">
+    <value>Computer</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Degistir" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="Devaminioku" xml:space="preserve">
+    <value>Read more</value>
+  </data>
+  <data name="Duzenle" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Ekle" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail Address</value>
+  </data>
+  <data name="EtiketEkle" xml:space="preserve">
+    <value>Create a tags</value>
+  </data>
+  <data name="Etiketler" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="EtiketSil" xml:space="preserve">
+    <value>Delete Tag</value>
+  </data>
+  <data name="EtiketTum" xml:space="preserve">
+    <value>All Tags</value>
+  </data>
+  <data name="Gercekten" xml:space="preserve">
+    <value>Do you really want to delete this tag?</value>
+  </data>
+  <data name="GercektenMaka" xml:space="preserve">
+    <value>Do you really want to delete this article?</value>
+  </data>
+  <data name="GirisYap" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="Gonder" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="Goruntulenme" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="Guncel" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="Harita" xml:space="preserve">
+    <value>Find your place on the map.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Hosgeldin" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="Hoşgeldiniz" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Iletisim1" xml:space="preserve">
+    <value>Please fill in the blank fields for contact.</value>
+  </data>
+  <data name="Ingilizce" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="KatDuzen" xml:space="preserve">
+    <value>Edit Category</value>
+  </data>
+  <data name="Kategoriler" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="KatEkle" xml:space="preserve">
+    <value>Create Category</value>
+  </data>
+  <data name="Kaydol" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="ListeGeri" xml:space="preserve">
+    <value>Back to list</value>
+  </data>
+  <data name="Makaleler" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="MakaleSil" xml:space="preserve">
+    <value>Delete Article</value>
+  </data>
+  <data name="MakaleYaz" xml:space="preserve">
+    <value>Create Article</value>
+  </data>
+  <data name="MakaYaz" xml:space="preserve">
+    <value>Write a article.</value>
+  </data>
+  <data name="Maziden" xml:space="preserve">
+    <value>Old</value>
+  </data>
+  <data name="Mesaj" xml:space="preserve">
+    <value>Your Message</value>
+  </data>
+  <data name="Once" xml:space="preserve">
+    <value>Minutes Ago</value>
+  </data>
+  <data name="Paylas" xml:space="preserve">
+    <value>Share this article</value>
+  </data>
+  <data name="PopularMakaleler" xml:space="preserve">
+    <value>Popular Articles</value>
+  </data>
+  <data name="Reklam" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="Reklam1" xml:space="preserve">
+    <value>Gungor.NET, which has been in operation since 2009, is an independent blog, in its personal blog category.
+         The purpose of the establishment is not to engage in commercial activity or gain profits.
+         In addition, about 20,000 people visit usluer.net monthly.
+
+        At Gungor.net, you will be able to use the blog's periodic costs, promotional spending, and other related
+         Promotions and advertisements are available to cover the costs for the specific fees accepted under the donation. The technical details of the blog, along with related ad types, fees and details, are shown below.
+
+        You can get detailed technical information about the blog, such as Pagerank and Alexa values, by clicking here, advertising and sponsorship
+         You can use the Contact page for your proposals or you can mail to ad@gungor.net.</value>
+  </data>
+  <data name="Reklam2" xml:space="preserve">
+    <value>The promotional price is 80 TL. If you are asked to prepare the text content by yourself, it is 100 TL.
+            The introductory note to be published must be at least 250 words and must be unique.
+            The title of the article can be up to 55 characters, including spaces, and can not contain a URL.
+            Up to 3 links can be output in a single site from within the article.
+            At least one visual in the text should be used. The visual resolution can not be low and moving at 800 × 300 pixels. The visual format can be one of the following formats: JPG, PNG, or GIF.
+            Visual content is always hosted on usluer.net.
+            Promotional posts are always included in the sponsors category and the link to the article is fixed at least 1 week in the promotional posts section in the side menu of the home page.
+            Promotional posts are published indefinitely. Entries will not be deleted unless the site is live.
+            After the manuscript has been published, no editing or addition can be made except for material mistakes and the meaning errors and mark errors can be corrected by the editor without approval from the manuscript.
+            It focuses solely on key words, lacks meaning, and does not publish articles that emphasize editorial personal liking.
+            No advertising work is done on the topic or any illegal sites that contain adult products, bets, alcohol, gambling, or warez.
+            The person receiving the advertising is deemed to have accepted the above conditions.</value>
+  </data>
+  <data name="ReklamBaslik" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="RolAta" xml:space="preserve">
+    <value>Assign User Role</value>
+  </data>
+  <data name="RolEkle" xml:space="preserve">
+    <value>Add Role</value>
+  </data>
+  <data name="Roller" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="SaatOnce" xml:space="preserve">
+    <value>Hours ago</value>
+  </data>
+  <data name="Sil" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SilHata" xml:space="preserve">
+    <value>There was an error while deleting.</value>
+  </data>
+  <data name="Simdi" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="SonMakaleler" xml:space="preserve">
+    <value>Recent Articles</value>
+  </data>
+  <data name="Tarihinde" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Turkce" xml:space="preserve">
+    <value>Turkish</value>
+  </data>
+  <data name="Virgul" xml:space="preserve">
+    <value>Please put a comma between the tags.</value>
+  </data>
+  <data name="Yayim" xml:space="preserve">
+    <value>Date of publication</value>
+  </data>
+  <data name="Yayinda" xml:space="preserve">
+    <value>Is it on air?</value>
+  </data>
+  <data name="Yayinla" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="Yazar" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Yazi" xml:space="preserve">
+    <value>I briefly talk about myself. I was born in Duisburg, Germany, in July of '88.
+        I am only 3 years old with the decision to return to my family Turkey,
+         I got back home from Germany without any memorabilia. I remember something fancy but these memories
+        I think it is because of looking at photographs taken in Germany.
+   
+        I completed primary education in Dereköy (kütahya), where I grew up.
+        I read "Foreign Language Department" in Kütahya Ali Güral Anatolian High School,
+        I finished Japanese Teacher Training at Çanakkale Onsekiz Mart University.
+        I met "Beautiful Çanakkalem" which I dreamed of living one day in the future.
+         I believe I have spent many years here despite the difficulties of the Japanese. I've got loyal friends I will meet for life,
+         I got the horses.
+
+        My Blog Blogger Maceram
+
+        I opened my first blog YAZARIST in the last days of 2012.
+         What is my first year blog for being a beginner in blogging?
+        It went through researches as to what works. Then I got a little more pleasure from writing a little bit of stuff.
+        It is necessary to make a great way to become a successful blogger.
+        As I see successful blogs, I keep on researching the blog quickly.
+        I will continue until I create the blog I want exactly.
+        There are two blogs I have written right now.</value>
+  </data>
+  <data name="Yorumlar" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="EtiketAlan" xml:space="preserve">
+    <value>The Etiket field is required.</value>
+  </data>
+  <data name="zorunluAdi" xml:space="preserve">
+    <value>The Kullanıcı Adı field is required.</value>
+  </data>
+  <data name="zorunluBaslik" xml:space="preserve">
+    <value>The Başlık field is required.</value>
+  </data>
+  <data name="zorunluEmail" xml:space="preserve">
+    <value>The E-Mail field is required.</value>
+  </data>
+  <data name="zorunluIcerik" xml:space="preserve">
+    <value>The İçerik field is required.</value>
+  </data>
+  <data name="zorunluPas" xml:space="preserve">
+    <value>The Parola field is required.</value>
+  </data>
+  <data name="Uye" xml:space="preserve">
+    <value>If you are not a member to my site, sign up now.</value>
+  </data>
+</root>

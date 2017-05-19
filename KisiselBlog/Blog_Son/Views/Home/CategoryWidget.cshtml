@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Blog_Son.Models.Kategori>
+
+@{
+    Layout = null;
+}
+<div class="categories widget">
+    <h3 class="widget-head">@Resources.HomeLan.Kategoriler</h3>
+    <ul>
+        @foreach (var kategori in Model)
+        {
+            <li>
+                <a href="/Kategori/Index/@kategori.Id">@kategori.Adi</a> <span class="badge">@kategori.Makale.Count</span>
+            </li>
+        }
+    </ul>
+</div>

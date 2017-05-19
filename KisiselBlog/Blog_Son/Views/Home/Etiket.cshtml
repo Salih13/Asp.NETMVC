@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Blog_Son.Models.Etiket>
+@{
+    Layout = null;
+}
+
+<div class="categories widget">
+    <h3 class="widget-head">@Resources.HomeLan.Etiketler</h3>
+    <div class="tag-cloud">
+        @foreach (var item in Model)
+        {
+            <a href="/Etiket/Index/@item.Id">@item.Adi (@item.Makale.Count)</a>
+        }
+    </div>
+</div>

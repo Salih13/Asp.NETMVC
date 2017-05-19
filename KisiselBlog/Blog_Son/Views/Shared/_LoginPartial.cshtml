@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNet.Identity
+
+@using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="col-md-8 col-sm-6 col-xs-6">
+        <div>
+            @if (Request.IsAuthenticated)
+            {
+
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Manage/Index">@Resources.HomeLan.Hosgeldin @User.Identity.GetUserName() </a>
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Makale/MakaleYaz">@Resources.HomeLan.MakaleYaz</a>
+                if (@User.Identity.GetUserName() == "salihgungor13@gmail.com")
+                {
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Yonetim/TumMakaleler">@Resources.HomeLan.Makaleler</a>
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Yonetim/EtiketListele">@Resources.HomeLan.Etiketler</a>
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Yonetim/Kategori">@Resources.HomeLan.Kategoriler</a>
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/RolYonetim/Index">@Resources.HomeLan.Roller</a>
+
+                }
+            }
+            else
+            {
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Home">@Resources.HomeLan.Hoşgeldiniz</a>
+            }
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="header-login">
+            @if (Request.IsAuthenticated)
+            {
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="javascript:document.getElementById('logoutForm').submit()">@Resources.HomeLan.CikisYap</a>
+            }
+            else
+            {
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Account/Login">@Resources.HomeLan.GirisYap </a>
+                <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="/Account/Register">@Resources.HomeLan.Kaydol</a>
+            }
+                @Html.ActionLink(Resources.HomeLan.Ingilizce, "ChangeCulture", "Home", new { lang = "en"}, null) |
+                @Html.ActionLink(Resources.HomeLan.Turkce, "ChangeCulture", "Home", new { lang = "tr" }, null)
+        </div>
+    </div>
+}

@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "Detay";
+}
+
+@model Blog_Son.Models.Makale
+
+<article>
+    <div class="blog-content">
+        <h2 class="blogpost-title">
+            <a href="/Makale/Detay/@Model.Id">@Model.Baslik</a>
+        </h2>
+        <div class="blog-meta">
+            <span>
+                <a href="/Makale/TariheGoreListe? yil=@Model.YayimTarihi.Year&ay=@Model.YayimTarihi.Month">
+                    @Model.YayimTarihi.ToString("MMMM yyyy")
+                </a>
+            </span>
+            <span><a href="/Kategori/Index/@Model.KategoriID"> @Model.Kategori.Adi </a></span>
+            @*<span><a href="/Yazar/Index/@Model.YazarID"> @Model.Kullanici.Adi @Model.Kullanici.Soyadi </a></span>*@
+            <span>@Resources.HomeLan.Yorumlar: <a href="#Yorum"> @Model.Yorum.Count </a></span>
+            <span>@Resources.HomeLan.Begeniler: <a href=""> @Model.Begeni </a></span>
+            <span>@Resources.HomeLan.Goruntulenme: <a href=""> @Model.Goruntulenme </a></span>
+        </div>
+        <p>
+
+            @Model.Icerik
+
+        </p>
+        <div class="blog-meta">
+            <span>
+                <a href="/Makale/TariheGoreListe? yil=@Model.YayimTarihi.Year&ay=@Model.YayimTarihi.Month">
+                    @Model.YayimTarihi.ToString("MMMM yyyy")
+                </a>
+            </span>
+            <span><a href="/Kategori/Index/@Model.KategoriID"> @Model.Kategori.Adi </a></span>
+            @*<span><a href="/Yazar/Index/@Model.YazarID"> @Model.Kullanici.Adi @Model.Kullanici.Soyadi </a></span>*@
+            <span>@Resources.HomeLan.Yorumlar: <a href="#Yorum"> @Model.Yorum.Count </a></span>
+            <span>@Resources.HomeLan.Begeniler: <a href=""> @Model.Begeni </a></span>
+            <span>@Resources.HomeLan.Goruntulenme: <a href=""> @Model.Goruntulenme </a></span>
+        </div>
+        <ul class="social-share">
+            <h4>@Resources.HomeLan.Paylas</h4>
+            <li>
+                <a href="#" class="Facebook">
+                    <i class="ion-social-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="Twitter">
+                    <i class="ion-social-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="Linkedin">
+                    <i class="ion-social-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="Google Plus">
+                    <i class="ion-social-googleplus"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a id="Yorum" />
+            @Model.Yorum.Count @Resources.HomeLan.Yorumlar
+            <div class="comments">
+                @foreach (var yorum in Model.Yorum)
+                {             
+                        <div class="categories-widget" style=" border: 1px solid #dedede;border-radius:3;
+ padding:10px 10px 10px 10px;background-color:azure;margin-right:220px">
+                            <h4 class="media-heading">
+                                @yorum.Adi
+                            </h4>
+                            <p style="margin-top:-10px;">
+                                @{
+                                    DateTime tarih = yorum.EklenmeTarihi;
+                                    TimeSpan sure = DateTime.Now - tarih;
+                                    if (sure.TotalMilliseconds < 0)
+                                    {
+                                    <p class="text-muted"> </p>
+                                    }
+                                    else if (sure.TotalMinutes < 1)
+                                    {
+                                        <p class="text-muted"> @Resources.HomeLan.Simdi </p>
+                                    }
+                                    else if (sure.TotalHours < 1)
+                                    {
+                                        <p class="text-muted"> @sure.Minutes @Resources.HomeLan.Once </p>
+                                    }
+                                    else if (sure.TotalDays < 1)
+                                    {
+                                        <p class="text-muted"> @sure.Hours @Resources.HomeLan.SaatOnce</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted"> @tarih.ToString("dd.MM.yyyy") @Resources.HomeLan.Tarihinde </p>
+                                    }
+                                }
+                                </p>
+                            <hr style="margin-top:-10px;"/>
+                                <p>
+                                    @yorum.Icerik
+                                </p>
+                            </div>
+                       
+                                    }
+                @{
+                    Blog_Son.Models.Kullanici kullanici = new Blog_Son.Models.Kullanici();
+                }
+                @*@if (ViewBag.Kullanici != null)
+                {*@
+                    <div class="post-comment">
+                        <h3>Bu makaleye yorum yap</h3>
+                        @using (Html.BeginForm("YorumYaz", "Makale", FormMethod.Post, new { @class = "form-horizontal" }))
+                        {
+                            <div class="form-group">                            
+                                <div class="col-lg-6">
+                                    <input type="text" class="col-lg-12 form-control" placeholder="@Resources.HomeLan.Adiniz" name="Adi">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="col-lg-12 form-control" placeholder="@Resources.HomeLan.Email" name="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="YazarID" value="" />
+                                <input type="hidden" name="MakaleID" value="@Model.Id" />
+                                <div class="col-lg-12">
+                                    <textarea class=" form-control" rows="8" placeholder="@Resources.HomeLan.Mesaj" name="Icerik"></textarea>
+                                </div>
+                            </div>
+                            <p>
+                                <button class="btn btn-send" type="submit">@Resources.HomeLan.Gonder</button>
+                            </p>
+                            <p></p>
+                        }
+                    </div>
+                @*}*@
+            </div>
+        </div>
+</article>

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="Aciklama" xml:space="preserve">
+    <value>Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum.
+Amacım teknoloji dünyasına ufakta olsa bir katkı sağlamak. Bloğumda her konudan yazı bulabileceksiniz. Aklıma takılan merak ettiğim ne varsa sizinle paylaşmaya çalışacağım.</value>
+  </data>
+  <data name="Adiniz" xml:space="preserve">
+    <value>İsminiz</value>
+  </data>
+  <data name="Arama" xml:space="preserve">
+    <value>Neyi aramak istiyorsun?</value>
+  </data>
+  <data name="Arsiv" xml:space="preserve">
+    <value>Arşiv</value>
+  </data>
+  <data name="Baslik" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="Begeniler" xml:space="preserve">
+    <value>Beğeniler</value>
+  </data>
+  <data name="CikisYap" xml:space="preserve">
+    <value>Çıkış Yap</value>
+  </data>
+  <data name="Computer" xml:space="preserve">
+    <value>Bilgisayar</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="Degistir" xml:space="preserve">
+    <value>Değiştir</value>
+  </data>
+  <data name="Devaminioku" xml:space="preserve">
+    <value>Devamını oku</value>
+  </data>
+  <data name="Duzenle" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Ekle" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EtiketEkle" xml:space="preserve">
+    <value>Etiket Ekle</value>
+  </data>
+  <data name="Etiketler" xml:space="preserve">
+    <value>Etiketler</value>
+  </data>
+  <data name="EtiketSil" xml:space="preserve">
+    <value>Etiket Sil</value>
+  </data>
+  <data name="EtiketTum" xml:space="preserve">
+    <value>Tüm Etiketler</value>
+  </data>
+  <data name="Gercekten" xml:space="preserve">
+    <value>Bu etiketi gerçekten silmek istiyor musun?</value>
+  </data>
+  <data name="GercektenMaka" xml:space="preserve">
+    <value>Bu makaleyi gerçekten silmek istiyor musun?</value>
+  </data>
+  <data name="GirisYap" xml:space="preserve">
+    <value>Giriş Yap</value>
+  </data>
+  <data name="Gonder" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="Goruntulenme" xml:space="preserve">
+    <value>Görüntülenme</value>
+  </data>
+  <data name="Guncel" xml:space="preserve">
+    <value>Güncel</value>
+  </data>
+  <data name="Harita" xml:space="preserve">
+    <value>Haritada yerinizi bulun.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="Hosgeldin" xml:space="preserve">
+    <value>Hoşgeldin</value>
+  </data>
+  <data name="Hoşgeldiniz" xml:space="preserve">
+    <value>Hoşgeldiniz</value>
+  </data>
+  <data name="Iletisim1" xml:space="preserve">
+    <value>İrtibat için lütfen boş bırakılan alanları doldurunuz.</value>
+  </data>
+  <data name="Ingilizce" xml:space="preserve">
+    <value>İngilizce</value>
+  </data>
+  <data name="KatDuzen" xml:space="preserve">
+    <value>Kategori Düzenle</value>
+  </data>
+  <data name="Kategoriler" xml:space="preserve">
+    <value>Kategoriler</value>
+  </data>
+  <data name="KatEkle" xml:space="preserve">
+    <value>Kategori Ekle</value>
+  </data>
+  <data name="Kaydol" xml:space="preserve">
+    <value>Kayıt Ol</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="ListeGeri" xml:space="preserve">
+    <value>Listeye geri dön</value>
+  </data>
+  <data name="Makaleler" xml:space="preserve">
+    <value>Makaleler</value>
+  </data>
+  <data name="MakaleSil" xml:space="preserve">
+    <value>Makale Sil</value>
+  </data>
+  <data name="MakaleYaz" xml:space="preserve">
+    <value>Makale Yaz</value>
+  </data>
+  <data name="MakaYaz" xml:space="preserve">
+    <value>Makaleyi yazınız.</value>
+  </data>
+  <data name="Maziden" xml:space="preserve">
+    <value>Old</value>
+  </data>
+  <data name="Mesaj" xml:space="preserve">
+    <value>Mesajınız</value>
+  </data>
+  <data name="Once" xml:space="preserve">
+    <value>Dakika Önce</value>
+  </data>
+  <data name="Paylas" xml:space="preserve">
+    <value>Bu makaleyi paylaş</value>
+  </data>
+  <data name="PopularMakaleler" xml:space="preserve">
+    <value>Popüler Makaleler</value>
+  </data>
+  <data name="Reklam" xml:space="preserve">
+    <value>Reklam</value>
+  </data>
+  <data name="Reklam1" xml:space="preserve">
+    <value>2009 yılından bu yana faaliyette olan usluer.net, kişisel blog kategorisinde, bağımsız bir blogdur.
+         Kuruluş amacı ticari faaliyette bulunmak veya kazanç elde etmek değildir.
+         Bunun yanında usluer.net’i ayda yaklaşık 20.000 kişi ziyaret etmektedir.
+
+        Usluer.net’te blogun periyodik giderlerini, tanıtım harcamalarını ve gelişerek daha iyi hizmet sunması ile ilgili diğer
+         masraflarını karşılamak üzere, bağış kapsamında kabul edilen belirli ücretler karşılığında tanıtım ve reklamlar yayınlanmaktadır. İlgili reklam çeşitleri, ücret ve detayları ile birlikte blogun teknik detayları aşağıda gösterilmiştir.
+
+        Blog ile ilgili Pagerank ve Alexa değerleri gibi detaylı teknik bilgilere buraya tıklayarak ulaşabilir, reklam ve sponsorluk
+         teklifleriniz için İletişim sayfasını kullanabilir ya da reklam@usluer.net adresine mail atabilirsiniz.</value>
+  </data>
+  <data name="Reklam2" xml:space="preserve">
+    <value>Tanıtım yazısı fiyatı 80 TL‘dir. Yazı içeriğinin tarafımızca hazırlanması istenirse 100 TL‘dir.
+            Yayınlanacak olan tanıtım yazısı en az 250 kelimeden oluşmalı ve özgün olmalıdır.
+            Yazıya ait başlık, boşluklar dahil olmak üzere en fazla 55 karakter olabilir ve URL içeremez.
+            Yazı içerisinden tek bir siteye ve en fazla 3 adet link çıkışı yapılabilir.
+            Yazı içerisinde en az 1 görsel kullanılmalıdır. Görsel çözünürlüğü 800×300 pikselden düşük ve hareketli olamaz. Görsel formatı JPG, PNG veya GIF formatlarından biri olabilir.
+            Görsel içerikler daima usluer.net sunucusunda barındırılır.
+            Tanıtım yazıları her zaman sponsorlar kategorisine dahil edilir ve yazıya ait bağlantı, anasayfada yan menüde bulunan tanıtım yazıları bölümünde en az 1 hafta sabitlenir.
+            Tanıtım yazıları süresiz olarak yayınlanır. Yazılar, site yayında olduğu sürece silinmez.
+            Yazı yayınlandıktan sonra, maddi hataların giderilmesi haricinde düzenleme ya da ekleme yapılamaz ve anlam bozuklukları ile imla hataları editör tarafından yazı sahibinden onay alınmaksızın düzeltilebilir.
+            Yalnızca anahtar kelimelere yoğunlaşılmış, anlam bütünlüğünden yoksun ve editörün kişisel beğenisini öne çıkaran yazılar yayınlanmaz.
+            Konusu veya içeriği yetişkinlere özel ürünler, bahis, alkol, kumar veya warez olan her türlü illegal sitelerle ilgili reklam çalışması yapılmaz.
+            Reklam alımı yapan kişi yukarıdaki koşulları kabul etmiş sayılır.</value>
+  </data>
+  <data name="ReklamBaslik" xml:space="preserve">
+    <value>Tanıtım Yazısı</value>
+  </data>
+  <data name="RolAta" xml:space="preserve">
+    <value>Kullanıcıya Rol Atayınız</value>
+  </data>
+  <data name="RolEkle" xml:space="preserve">
+    <value>Rol Ekle</value>
+  </data>
+  <data name="Roller" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="SaatOnce" xml:space="preserve">
+    <value>Saat Önce</value>
+  </data>
+  <data name="Sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="SilHata" xml:space="preserve">
+    <value>Silerken hata oluştu.</value>
+  </data>
+  <data name="Simdi" xml:space="preserve">
+    <value>Şimdi</value>
+  </data>
+  <data name="SonMakaleler" xml:space="preserve">
+    <value>Son Makaleler</value>
+  </data>
+  <data name="Tarihinde" xml:space="preserve">
+    <value>Tarihinde</value>
+  </data>
+  <data name="Turkce" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
+  <data name="Virgul" xml:space="preserve">
+    <value>Lütfen etiketler arasına virgül koyunuz.</value>
+  </data>
+  <data name="Yayim" xml:space="preserve">
+    <value>Yayım Tarihi</value>
+  </data>
+  <data name="Yayinda" xml:space="preserve">
+    <value>Yayında mı?</value>
+  </data>
+  <data name="Yayinla" xml:space="preserve">
+    <value>Yayınla</value>
+  </data>
+  <data name="Yazar" xml:space="preserve">
+    <value>Yazar</value>
+  </data>
+  <data name="Yazi" xml:space="preserve">
+    <value>Hemen kısaca kendimden bahsedeyim. Almanya’nın Duisburg kentinde, 88’in Temmuz ayında doğmuşum. 
+        Ailemin Türkiye’ye geri dönme kararı ile sadece 3 yaşında olan ben,
+         Almanya’dan hiçbir hatıra alamadan vatanıma geri dönmüşüm. Hayal meyal bir şeyler hatırlıyorum ama bu hatıraların 
+        Almanya’da çekilmiş fotoğraflarıma bakmamdan dolayı oluştuğunu düşünmekteyim.
+   
+        İlköğretimi büyüdüğüm yer olan Dereköy(kütahya)’ de tamamladım. 
+        Kütahya Ali Güral Anadolu Lisesi’nde ”Yabancı Dil Bölümü’nü” okuyup, 
+        Çanakkale Onsekiz Mart Üniversitesi‘nde Japonca Öğretmenliği’ni bitirdim. 
+        İleride bir gün yaşama hayali kurduğum ‘’Güzel Çanakkalem’’ ile tanıştım.
+         Burada Japoncanın zorluklarına rağmen çok güzel yıllar geçirdiğime inanıyorum. Hayat boyu görüşeceğim vefalı dostlar elde ettim,
+         hocalar tanıdım. 
+
+        Kişisel Blog Yazarlığı Maceram
+
+        İlk blogum YAZARİSTAN‘ı 2012′ nin son günlerinde açtım.
+         Blog açma konusunda acemi olduğum için ilk yılım Blog Nedir? 
+        Ne işe yarar gibi araştırmalar ile geçti. Sonra biraz biraz bir şeyler öğrenince yazmaktan daha da zevk aldım. 
+        Başarılı bir blog yazarı olabilmek için hayli bir yol kat etmek gerekiyor. 
+        Başarılı blogları gördükçe blog hakkında araştırmalara hızla devam ediyorum. 
+        Tam anlamıyla istediğim blogu oluşturana kadar devam edeceğim. 
+        Şu anda yazmış olduğum iki blog var.</value>
+  </data>
+  <data name="Yorumlar" xml:space="preserve">
+    <value>Yorumlar</value>
+  </data>
+  <data name="EtiketAlan" xml:space="preserve">
+    <value>Etiket alanı zorunludur</value>
+  </data>
+  <data name="zorunluAdi" xml:space="preserve">
+    <value>Kullanıcı adı alanı zorunludur.</value>
+  </data>
+  <data name="zorunluBaslik" xml:space="preserve">
+    <value>Başlık alanı zorunludur.</value>
+  </data>
+  <data name="zorunluEmail" xml:space="preserve">
+    <value>Kullanıcı E-Mail alanı zorunludur.</value>
+  </data>
+  <data name="zorunluIcerik" xml:space="preserve">
+    <value>İçerik alanı zorunludur.</value>
+  </data>
+  <data name="zorunluPas" xml:space="preserve">
+    <value>Parola alanı zorunludur.</value>
+  </data>
+  <data name="Uye" xml:space="preserve">
+    <value>Sitemize üye değilseniz hemen üye olun.</value>
+  </data>
+</root>

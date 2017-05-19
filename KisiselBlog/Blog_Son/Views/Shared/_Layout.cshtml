@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="~/Content/images/favicon.png">
+    <title>Salih Güngör</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/ckeditor")
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <header id="top-bar" class="navbar-fixed-top animated-header">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="/Home/Index">
+                        <img src="~/Content/images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <div class="main-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink(Resources.HomeLan.Home, "Index", "Home")</li>
+                        <li>@Html.ActionLink(Resources.HomeLan.About, "Hakkimda", "Home")</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Resources.HomeLan.Arsiv<span class="caret"></span></a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">@Resources.HomeLan.Guncel</a></li>
+                                    <li><a href="#">@Resources.HomeLan.Maziden</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            @Html.ActionLink(Resources.HomeLan.Reklam, "Reklam", "Home")
+                        </li>
+                        <li>@Html.ActionLink(Resources.HomeLan.Contact, "Iletisim", "Home")</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="blog-full-width">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div class="search widget">
+                            <form action="" method="get" class="searchform" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="@Resources.HomeLan.Arama">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"> <i class="ion-search"></i> </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="author widget">
+                            <img class="img-responsive" src="~/Content/images/author/author-bg.jpg">
+                            <div class="author-body text-center">
+                                <div class="author-img">
+                                    <img src="~/Content/images/bursa.png">
+                                </div>
+                                <div class="author-bio">
+                                    <h3>Salih Güngör</h3>
+                                    <p>
+                                       @Resources.HomeLan.Aciklama
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        @{
+                            Html.RenderAction("CategoryWidget", "Home");
+                            Html.RenderAction("RecentWidget", "Home");
+                            Html.RenderAction("PopulerWidget", "Home");
+                            Html.RenderAction("Etiket", "Home");
+                        }
+                    </div>
+                </div>
+                <div class="col-md-8" style="border: 1px solid #dedede;background-color:white;margin-top:60px;margin-left:-12px;padding-left:40px;padding-right:40px">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="col-md-8">
+                <p class="copyright">Copyright: <span>2016</span> | Design and Developed by Salih Güngör</p>
+            </div>
+            <div class="col-md-4">
+                <ul class="social">
+                    <li>
+                        <a href="#" class="Facebook">
+                            <i class="ion-social-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="Twitter">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="Linkedin">
+                            <i class="ion-social-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="Google Plus">
+                            <i class="ion-social-googleplus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
