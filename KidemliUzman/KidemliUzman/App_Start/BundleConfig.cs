@@ -9,7 +9,12 @@ namespace KidemliUzman
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Content/vendor/jquery/jquery.min.js",                      
+                        "~/Content/vendor/scrollreveal/scrollreveal.min.js",
+                        "~/Content/vendor/magnific-popup/jquery.magnific-popup.min.js",
+                        "~/Scripts/js/creative.min.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -21,11 +26,10 @@ namespace KidemliUzman
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Content/vendor/bootstrap/js/bootstrap.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css",
                       "~/Content/vendor/bootstrap/css/bootstrap.min.css",
                       "~/Content/vendor/font-awesome/css/font-awesome.min.css",
                       "~/Content/vendor/magnific-popup/magnific-popup.css",
