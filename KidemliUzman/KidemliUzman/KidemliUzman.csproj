@@ -293,7 +293,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\creative.js" />
     <Content Include="Scripts\js\creative.min.js" />
-    <Content Include="Scripts\js\LoginAndRegister.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
